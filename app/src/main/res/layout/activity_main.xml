@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:step="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gavin.step.StepView
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        step:totalstep="4"
+        step:completestep="1"
+        />
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="next"
+        android:text="Next"
+        />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="reset"
+        android:text="Reset"
+        />
+</LinearLayout>
